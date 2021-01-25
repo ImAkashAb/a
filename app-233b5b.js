@@ -2323,7 +2323,7 @@
         stabilityDelta: 2,
         minStableMeasurements: 6,
         measureLatency: !1
-      }), testerFactory = require("./tester"), utils = require("./utils"), events = require("./event").events, requester = require("./requester/xhr"), logging = require("./logger"), apiEndpoint = "api.fast.com/netflix/speedtest/v2", loggingEndpoint = "https://ichnaea-web.netflix.com/cl2", window.console || (console = {
+      }), testerFactory = require("./tester"), utils = require("./utils"), events = require("./event").events, requester = require("./requester/xhr"), logging = require("./logger"), apiEndpoint = "v2", loggingEndpoint = "https://ichnaea-web.netflix.com/cl2", window.console || (console = {
         log: utils.dummy
       }), utils.polyfillObjectKeys(), tester = testerFactory(requester, {
         collectAfterComplete: !1,
