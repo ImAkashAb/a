@@ -30,3 +30,4 @@ targetUrl=protocol+"//"+hostname+"/"+curLang+"/share/"+speedData.speed+speedData
 
 
 
+
