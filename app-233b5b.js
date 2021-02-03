@@ -1252,8 +1252,8 @@
           lastBytesLoaded = 0, request = xhr(), request.onprogress = onprogress, xmlHttpTimeout = setTimeout(ontimeout, requestTimeoutMs), "onreadystatechange" in request ? request.onreadystatechange = function(e) {
             testIsRunning && 4 === this.readyState && (200 === this.status || 304 === this.status ? onload.apply(this) : onerror.apply(this))
           } : (request.onerror = onerror, request.onload = onload, request.ontimeout = function() {}), request.open("GET", url, !0), withResponse || (request.overrideMimeType && request.overrideMimeType("text/plain; charset=x-user-defined"), request.responseType = "blob"), lastProgressTime = lastCompleteTime = timer(), request.timeout = 6e4, setTimeout(function() {
-			  request && request.send()
-		  }, 0)
+            request && request.send()
+          }, 0)
         }
 
         function uploadTest(url, size) {
@@ -2323,7 +2323,7 @@
         stabilityDelta: 2,
         minStableMeasurements: 6,
         measureLatency: !1
-      }), testerFactory = require("./tester"), utils = require("./utils"), events = require("./event").events, requester = require("./requester/xhr"), logging = require("./logger"), apiEndpoint = "v2", loggingEndpoint = "https://ichnaea-web.netflix.com/cl2", window.console || (console = {
+      }), testerFactory = require("./tester"), utils = require("./utils"), events = require("./event").events, requester = require("./requester/xhr"), logging = require("./logger"), apiEndpoint = "api.fast.com/netflix/speedtest/v2", loggingEndpoint = "https://ichnaea-web.netflix.com/cl2", window.console || (console = {
         log: utils.dummy
       }), utils.polyfillObjectKeys(), tester = testerFactory(requester, {
         collectAfterComplete: !1,
